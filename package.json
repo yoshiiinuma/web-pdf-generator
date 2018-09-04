@@ -19,9 +19,9 @@
   "author": "Yoshiaki Iinuma",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.0.0",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.1",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -29,6 +29,7 @@
     "chai": "^4.1.2",
     "isparta": "^4.1.0",
     "istanbul": "^0.4.5",
+    "minimatch": "^3.0.2",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.4",
     "sinon": "^6.1.5",
