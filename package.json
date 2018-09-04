@@ -1,0 +1,43 @@
+{
+  "name": "web-pdf-generator",
+  "version": "1.0.0",
+  "description": "web based pdf generator",
+  "main": "index.js",
+  "scripts": {
+    "exec": "babel-node src/index.js",
+    "build": "babel src --out-dir dist",
+    "watch": "webpack --watch",
+    "webpack-build": "webpack src/index.js dist/bundle.js",
+    "cover": "NODE_ENV=test babel-node ./node_modules/.bin/isparta cover _mocha",
+    "test": "NODE_ENV=test mocha --require babel-register './test/**/*.{js,es6}' || exit 0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "author": "Yoshiaki Iinuma",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "isparta": "^4.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "sinon": "^6.1.5",
+    "supertest": "^3.1.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
