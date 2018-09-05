@@ -2,12 +2,12 @@
   "name": "web-pdf-generator",
   "version": "1.0.0",
   "description": "web based pdf generator",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "exec": "babel-node src/index.js",
+    "exec": "babel-node src/server.js",
     "build": "babel src --out-dir dist",
     "watch": "webpack --watch",
-    "webpack-build": "webpack src/index.js dist/bundle.js",
+    "webpack-build": "webpack src/server.js dist/bundle.js",
     "cover": "NODE_ENV=test babel-node ./node_modules/.bin/isparta cover _mocha",
     "test": "NODE_ENV=test mocha --require babel-register './test/**/*.{js,es6}' || exit 0"
   },
